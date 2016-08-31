@@ -26,7 +26,7 @@ print "I also said: '%s'." % y
 hilarious = False
 joke_evaluation = "Isn't that joke so funny?! %r"
 
-# In this case, the string defined on 'joke_evaluation' contains the 'format character' '%r'. Even being an output of a string, he will use the %r to receive anything from the next variable.
+# In this case, the string defined on 'joke_evaluation' contains the 'format character' '%r'. Even being an output of a string, it will use the %r to receive anything from the next variable.
 print joke_evaluation % hilarious
 
 w = "This is the left side of..."
