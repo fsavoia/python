@@ -7,3 +7,12 @@
 # limpar terminal
 import os
 os.system('cls' if os.name == 'nt' else 'clear')
+
+larg=float(input('Informe a largura da parede em metros: '))
+alt=float(input('Informe a altura da parede em metros: '))
+area=larg*alt
+tinta=area/2
+
+print ('')
+print('-' * 50)
+print(f'\nArea total possui {area}m quadrados, portanto você precisa de {tinta}l de tinta.\n')
