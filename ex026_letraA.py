@@ -10,7 +10,7 @@
 from os import system, name
 system('cls' if name == 'nt' else 'clear')
 
-frase = input('Escreva uma frase: ').upper().strip()
+frase = input('Escreva uma frase: ').upper().strip().replace('Á','A').replace('À','A')
 
 print(f'\nA letra "A" aparece {frase.count("A")} vezes na sua frase')
 print(f'A letra "A" aparece na posição {frase.find("A")+1} da sua frase')
