@@ -1,6 +1,6 @@
 # python
-Script to study
+Scripts to study
 
 Website to practice Python coding without using any configuration
 
-https://repl.it/languages/python
+https://repl.it/languages/python3
