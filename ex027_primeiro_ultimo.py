@@ -14,5 +14,5 @@ system('cls' if name == 'nt' else 'clear')
 nome = input('Digite seu nome completo: ')
 dividido = nome.split()
 
-print('primeiro = {}'.format(dividido[0]))
-print('último = {}'.format(dividido[]))
+print('\nPrimeiro = {}'.format(dividido[0].capitalize()))
+print('Último = {}'.format(dividido[-1].capitalize()))
