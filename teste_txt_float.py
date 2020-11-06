@@ -12,7 +12,7 @@ except :
 
 if res == True:
     n1=float(n1)
-    if n1  > 10:
+    if n1 > 10:
         print('> Nota 1 inválida! Nota válida: <0-10>')
         exit(1)
 else:
@@ -29,7 +29,7 @@ except :
 
 if res2 == True:
     n2=float(n2)
-    if n2  > 10:
+    if n2 > 10:
         print('> Nota 2 inválida! Nota válida: <0-10>')
         exit(1)
 
