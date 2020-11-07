@@ -8,8 +8,13 @@
 from os import system, name
 system('cls' if name == 'nt' else 'clear')
 
-ano = input('Informe um ano: ')
-zero = ano.endswith('00')
+from datetime import date
+
+ano = input('Informe um ano. Digite 0 para analisar o ano atual: ')
+if int(ano) == 0:
+    ano = date.today().year
+
+zero = str(ano).endswith('00')
 
 if zero == True:
     if int(ano) % 400 == 0:
