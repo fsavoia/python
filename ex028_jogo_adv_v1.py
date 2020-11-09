@@ -11,9 +11,9 @@ os.system('cls' if os.name == 'nt' else 'clear')
 # importar módulos random / speep
 import random, time
 
-print('-=-'*20)
+print('\033[1;33m-=-\033[m'*20)
 print('Vou pensar em um número entre 0 e 5. Tente advinhar ...')
-print('-=-'*20)
+print('\033[1;33m-=-\033[m'*20)
 
 num = input('Em qual número eu pensei? ')
 
@@ -33,19 +33,19 @@ except :
 if res == True:
     num=int(num)
     if num > 5:
-        print('\n> Número inválido! Digite um número entre <0-5>')
+        print('\n\033[1;31m> Número inválido! Digite um número entre <0-5>\033[m')
         exit(1)
     else: # Caso seja menor que 1, ele faz o teste efetivo do game.
         if num == computador:
             print('PROCESSANDO...')
             time.sleep(3)
-            print(f'\nPARABÉNS! Você conseguiu me vencer!')
+            print(f'\n\033[1;32mPARABÉNS! Você conseguiu me vencer!\033[m')
         else:
             print('PROCESSANDO...')
             time.sleep(3)
-            print(f'\nGANHEI! Eu pensei no número {computador} e não no número {num}.')
+            print(f'\n\033[1;34mGANHEI! Eu pensei no número {computador} e não no número {num}.\033[m')
 else: # Esse else é caso ele identifique que é um texto (False) 
-    print('\n> Caractere inválido!')
+    print('\n\033[1;31m> Caractere inválido!\033[m')
     exit(1)
 
 
