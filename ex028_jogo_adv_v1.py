@@ -8,9 +8,10 @@
 import os
 os.system('cls' if os.name == 'nt' else 'clear')
 
-# importar módulos random / speep
+# importar módulos random / sleep
 import random, time
 
+# Definindo a função principal
 def main():
     print('\033[1;33m-=-\033[m'*20)
     print('Vou pensar em um número entre 0 e 5. Tente advinhar ...')
@@ -48,16 +49,17 @@ def main():
         print('\n\033[1;31m> Caractere inválido!\033[m')
         exit(1)
 
-    while True:
-        answer = input("\nRodar novamente? (s/n): ")
+    while True: # abre um while para perguntar se deseja continuar
+        answer = input('\nRodar novamente? (s/n): ')
         if answer not in ('s', 'n'):
             print('\n\033[1;31m> Caractere inválido!\033[m')
-            break
+            exit(1)
         if answer == 's':
             os.system('cls' if os.name == 'nt' else 'clear')
             main()
         else:
             print('\n\033[1;36mAté mais!\033[m')
-            break
+            exit(0)
 
+# Chamando função principal (programa em si)
 main()
