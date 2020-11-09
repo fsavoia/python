@@ -57,7 +57,7 @@ def main():
             os.system('cls' if os.name == 'nt' else 'clear')
             main()
         else:
-            print("Até mais!")
+            print('\n\033[1;36mAté mais!\033[m')
             break
 
 main()
